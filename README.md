@@ -1,26 +1,44 @@
-# hi04-currency-converter
-<h1 align="center">Hi 👋, I'm Hiba M.Dawood</h1>
-<h3 align="center">A passionate full-stack developer from Pakistan.</h3>
+# 💱 CLI Currency Converter
 
+A dynamic, real-time command-line Currency Converter built using TypeScript and Node.js. It allows users to instantly convert amounts between multiple global currencies using an optimized base-currency mathematical formula.
 
+---
 <p align="left"> <img align="right" alt="coding" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoxPxYi2_b-MrJMdO6zv6iOZRMTIg3H89Mw&usqp=CAU" alt="hibadawood" /> </p>
+## ✨ Features
 
-- 🌱 I’m currently learning **cloud Applied generative AI**
+* **Multi-Currency Support:** Handles conversions across USD, YEN, EUR, CAD, AUD, and PKR.
+* **Base-Currency Logic:** Uses a highly efficient architecture where USD acts as the base currency ($1$) to calculate rates accurately.
+* **Interactive Prompts:** Smooth user experience with distinct dropdown menus using `inquirer`.
+* **Clean Precision Formatting:** Outputs the converted results rounded perfectly to two decimal places (`.toFixed(2)`) with vibrant layout colors via `chalk`.
 
-- 👨‍💻 All of my projects are available at [https://github.com/HibaDawood](https://github.com/HibaDawood)
+---
 
-- 💬 Ask me about **Scalable, creative, cloud-based AI solution.**
+## 🧮 Conversion Formula
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/hiba m dawood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="hiba m dawood" height="30" width="40" /></a>
-</p>
+The application processes conversion seamlessly through a two-step normalization formula:
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> </p>
+$$\text{Base Amount (USD)} = \frac{\text{User Amount}}{\text{From Currency Rate}}$$
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=hibadawood&show_icons=true&locale=en&layout=compact" alt="hibadawood" /></p>
+$$\text{Final Converted Amount} = \text{Base Amount} \times \text{To Currency Rate}$$
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hibadawood&show_icons=true&locale=en" alt="hibadawood" /></p>
+---
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=hibadawood&" alt="hibadawood" /></p
+## 🛠️ Tech Stack
+
+* **Language:** TypeScript / Node.js
+* **Dependencies:** `inquirer` (Interactive CLI inputs), `chalk` (Terminal styling)
+
+---
+
+## 🚀 How to Run & Use
+
+1. Clone or download this repository locally.
+2. Open your terminal in the project folder and install the required modules:
+   ```bash
+   npm install
+
+3. Launch the converter using the following command:
+
+```bash
+npx tsc && node index.js
+

@@ -14,7 +14,7 @@ let exchange_rate = {
 //propmt the user to select currencies from and to
 let user_answer = await inquirer.prompt([
     {
-        name: "from_cuurency",
+        name: "from_currency",
         type: "list",
         message: chalk.magenta("Select the currency to convert from:"),
         choices: ["USD", "YEN", "EUR", "CAD", "AUD", "PKR"],
@@ -32,7 +32,7 @@ let user_answer = await inquirer.prompt([
     },
 ]);
 //perform currency conversation by using formula
-let from_amount = exchange_rate[user_answer.from_cuurency];
+let from_amount = exchange_rate[user_answer.from_currency];
 let to_amount = exchange_rate[user_answer.to_currency];
 let amount = user_answer.amount;
 //Formula of conversation

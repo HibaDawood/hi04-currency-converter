@@ -1,4 +1,5 @@
 # 💱 CLI Currency Converter
+[![npm version](https://img.shields.io/npm/v/hi04-currency-converter-hb.svg?style=flat-square)](https://www.npmjs.com/package/hi04-currency-converter-hb)
 
 A dynamic, real-time command-line Currency Converter built using TypeScript and Node.js. It allows users to instantly convert amounts between multiple global currencies using an optimized base-currency mathematical formula.
 
@@ -29,16 +30,9 @@ $$\text{Final Converted Amount} = \text{Base Amount} \times \text{To Currency Ra
 * **Dependencies:** `inquirer` (Interactive CLI inputs), `chalk` (Terminal styling)
 
 ---
+### 🚀 How to Run & Use
 
-## 🚀 How to Run & Use
-
-1. Clone or download this repository locally.
-2. Open your terminal in the project folder and install the required modules:
-   ```bash
-   npm install
-
-3. Launch the converter using the following command:
+Run this application directly in your terminal using `npx` (No installation required):
 
 ```bash
-npx tsc && node index.js
-
+npx hi04-currency-converter-hb

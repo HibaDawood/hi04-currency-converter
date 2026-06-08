@@ -26,7 +26,7 @@ $$\text{Final Converted Amount} = \text{Base Amount} \times \text{To Currency Ra
 
 ## 🛠️ Tech Stack
 
-* **Language:** TypeScript / Node.js
+* **Language:** TypeScript & Node.js
 * **Dependencies:** `inquirer` (Interactive CLI inputs), `chalk` (Terminal styling)
 
 ---
